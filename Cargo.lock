@@ -3,9 +3,17 @@
 version = 3
 
 [[package]]
+name = "common"
+version = "0.1.0"
+dependencies = [
+ "windows",
+]
+
+[[package]]
 name = "hello_window"
 version = "0.1.0"
 dependencies = [
+ "common",
  "windows",
 ]
 
@@ -13,6 +21,7 @@ dependencies = [
 name = "hello_window_clear"
 version = "0.1.0"
 dependencies = [
+ "common",
  "windows",
 ]
 

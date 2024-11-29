@@ -1,5 +1,5 @@
 [workspace]
-members = ["01_getting_started/*"]
+members = ["01_getting_started/*", "common"]
 resolver = "2"
 
 [workspace.package]
@@ -7,6 +7,7 @@ version = "0.1.0"
 edition = "2021"
 
 [workspace.dependencies]
+common = { version = "*", default-features = false, path = "common" }
 
 [workspace.dependencies.windows]
 version = "0.58.0"
@@ -15,6 +16,7 @@ features = [
     "Win32_Graphics_Direct3D_Fxc",
     "Win32_Graphics_Direct3D12",
     "Win32_Graphics_Dxgi",
+    "Win32_Graphics_Dxgi_Common",
     "Win32_Graphics_Gdi",
     "Win32_Security",
     "Win32_System_Diagnostics_Debug",

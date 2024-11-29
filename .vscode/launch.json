@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "db",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/hello_window_clear.exe",
+            "environment": [
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "1"
+                }
+            ],
+            "cwd": "${workspaceFolder}/01_getting_started/1_2_hello_window_clear",
+            "console": "integratedTerminal",
+            "preLaunchTask": "build sample"
+        }
+    ]
+}

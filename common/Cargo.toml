@@ -1,8 +1,7 @@
 [package]
-name = "hello_window"
-edition.workspace = true
+name = "common"
 version.workspace = true
+edition.workspace = true
 
 [dependencies]
-common.workspace = true
 windows.workspace = true
